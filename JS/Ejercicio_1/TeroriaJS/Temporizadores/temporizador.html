@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEMPORIZADORES</h1>
+    <script>
+        setTimeout(() => {
+            console.log("SetTimeout Esto se ejecuta una sola vez", new Date().getMinutes());
+        }, 1000);
+
+        setInterval(() => {
+            console.info("SetInterva Esto se ejecuta indefinidamente",new Date().getSeconds());
+        }, 10000);
+
+        let tem = setTimeout(() => {
+            console.info("SetTimeout Esto se ejecuta una sol")
+        }, 1000);
+
+        clearTimeout(tem);
+        console.info("SetTimeout cancelado");
+
+        let interval = setInterval(() => {
+            console.log("SetTi")
+        }, 10000);
+        clearInterval(interval);
+        console.info("SetInterval Cancelado");
+    </script> 
+</body>
+</html>
